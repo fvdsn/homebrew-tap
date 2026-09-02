@@ -1,28 +1,28 @@
 class Jig < Formula
   desc "Manage a workspace of many Git repositories from a single shared schema"
   homepage "https://github.com/fvdsn/jig"
-  version "2.2.1"
+  version "2.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/fvdsn/jig/releases/download/v2.2.1/jig_v2.2.1_darwin_arm64.tar.gz"
-      sha256 "27c9de5ca4a15fd2aaaf07cbc63f3819828609d6ee0f203425c64946ad295915"
+      url "https://github.com/fvdsn/jig/releases/download/v2.3.0/jig_v2.3.0_darwin_arm64.tar.gz"
+      sha256 "2367eab01e582f54ceff8b548ee640967cb948ee51223894d14149936b57af84"
     end
     on_intel do
-      url "https://github.com/fvdsn/jig/releases/download/v2.2.1/jig_v2.2.1_darwin_amd64.tar.gz"
-      sha256 "6a5eb22ab5b1acfd86c0fa2390dd79bd8fbba69437d7cd41104f7639df3cddd3"
+      url "https://github.com/fvdsn/jig/releases/download/v2.3.0/jig_v2.3.0_darwin_amd64.tar.gz"
+      sha256 "9a757883c4282cb3aee4d5120ef2c192eff410fa207cfa0c8156a04fa37281cc"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/fvdsn/jig/releases/download/v2.2.1/jig_v2.2.1_linux_arm64.tar.gz"
-      sha256 "602a489ff59f12b3b05af5f17d43c3ce19ba6d9e0ef960e0824c493322312a3a"
+      url "https://github.com/fvdsn/jig/releases/download/v2.3.0/jig_v2.3.0_linux_arm64.tar.gz"
+      sha256 "de36a414563da8f4dbd5acaa543bd42e939687fe90dac99d601fa6e05930bfb4"
     end
     on_intel do
-      url "https://github.com/fvdsn/jig/releases/download/v2.2.1/jig_v2.2.1_linux_amd64.tar.gz"
-      sha256 "6a720d622fc905f648c795a5ec0fc37c2dfe411d82d37853517d89963ecda821"
+      url "https://github.com/fvdsn/jig/releases/download/v2.3.0/jig_v2.3.0_linux_amd64.tar.gz"
+      sha256 "6b2e602adf32e2d2790f9b065570dbad555193e244acbf3efa866f26d15cc302"
     end
   end
 
@@ -31,6 +31,6 @@ class Jig < Formula
   end
 
   test do
-    assert_match "jig v2.2.1", shell_output("#{bin}/jig --version")
+    assert_match "jig v2.3.0", shell_output("#{bin}/jig --version")
   end
 end
